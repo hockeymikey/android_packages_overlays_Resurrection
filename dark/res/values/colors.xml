@@ -1,8 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- The color of the legacy notification background -->
+	
+   <color name="notification_legacy_background_color">#ff1a1a1a</color>
+	
+    <!-- The color of the material notification background when dimmed -->
+	
+    <color name="notification_material_background_dimmed_color">#ff212121</color>
+	
+	
+    <!-- The color of the material notification background when low priority -->
+	
+    <color name="notification_material_background_low_priority_color">#ff212121</color>
+
+    <!-- The color of the dividing line between grouped notifications. -->
+    <color name="notification_divider_color">#ff111111</color>
+
+    <!-- The "inside" of a notification, reached via longpress -->
+    <!--- <color name="notification_guts_bg_color">@*android:color/notification_guts_bg_color</color>
+    -->
+
+    <!-- The color of the material notification background -->
+
+    <color name="notification_material_background_color">#ff212121</color>
+
+    <bool name="config_allowNotificationIconTextTinting">true</bool>
+
+    <bool name="config_useDarkBgNotificationIconTextTinting">true</bool>
+
+    <bool name="config_useDarkBgNotificationIconTinting">true</bool>
+
+    <color name="system_notification_accent_color">#ff78909c</color>
+
+    <!--
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="notification_template_divider">#29000000</drawable>
+    <drawable name="notification_template_divider_media">#29ffffff</drawable>
+    -->
+
+    <color name="notification_default_color">#ff212121</color>
+
+    <color name="background_floating_material_dark">#ff212121</color>
+
+    <!--
+    <color name="notification_icon_default_color">@color/notification_default_color</color>
+    -->
+
+    <color name="notification_progress_background_color">@*android:color/secondary_text_material_dark</color>
+
+    <color name="notification_action_list">#ff303030</color>
+    <color name="notification_action_list_dark">#ff303030</color>
+
+    <color name="notification_text_default_color">#ffffffff</color>
+
+    <color name="sender_text_color">@android:color/white</color>
+
+    <!-- Whether doze should invert colors for notifications. If the RRO theme causes
+    the NORMAL notification background to be dark and the text to be light, this boolean
+    needs to be set to false, to prevent the doze notifications from being light -->
+    <bool name="config_invert_colors_on_doze">false</bool>
+
+    <color name="notification_primary_text_color_light">#ffffffff</color>
+    <!-- Don't do transparency here, or it modify color to look bad -->
+    <color name="notification_secondary_text_color_light">#b3b3b3</color>
+    <color name="notification_default_color_light">#212121</color>
+    <color name="notification_default_color_dark">#212121</color>
+
+    <color name="notification_shade_background_color">#212121</color>
+
     <!-- Toast text and bg colors -->
     <color name="toast_bg_color">#cc212121</color>
     <color name="toast_text_color">@*android:color/primary_text_default_material_dark</color>
 
+    <color name="homepage_card_dismissal_background">@*android:color/notification_material_background_color</color>
+    <color name="contextual_card_background">@*android:color/notification_material_background_color</color>
+    <color name="search_bar_background">@*android:color/notification_material_background_color</color>
+
+    <!-- Dialog background color -->
+   <color name="dialog_background">@*android:color/notification_material_background_color</color>
 </resources>

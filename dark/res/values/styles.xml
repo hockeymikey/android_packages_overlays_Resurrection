@@ -30,6 +30,15 @@
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
     </style>
 
+    <style name="Theme.DeviceDefault.Settings.Dialog" parent="@*android:style/Theme.Material.Settings.Dialog">
+    	<!-- Color palette -->
+	<item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+	<item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
+	<item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
+	<item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
+    </style>
+
+
     <style name="Theme.DeviceDefault.Settings" parent="@*android:style/Theme.Material">
         <item name="android:actionBarTheme">@*android:style/ThemeOverlay.DeviceDefault.ActionBar.Accent</item>
         <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
@@ -45,4 +54,27 @@
         <item name="android:colorPrimary">@*android:color/primary_material_settings</item>
         <item name="android:colorSecondary">@*android:color/secondary_material_settings</item>
     </style>
+
+    <style name="Theme.Material.Settings.Dialog" parent="@*android:style/Theme.Material.Settings.BaseDialog" />
+
+    <style name="TextAppearance.Material.Notification" parent="@*android:style/TextAppearance.Material">
+         <item name="android:textColor">@*android:color/secondary_text_material_dark</item>
+         <item name="android:textSize">@*android:dimen/notification_text_size</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Emphasis" parent="@*android:style/TextAppearance.Material.Notification">
+         <item name="android:textColor">#80ffffff</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Info" parent="@*android:style/TextAppearance.Material.Notification">
+         <item name="android:textSize">@*android:dimen/notification_subtext_size</item>
+         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+
+
+    <style name="Theme.Material.Settings" parent="@*android:style/Theme.Material.Light.LightStatusBar">
+	    <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+          <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_settings_light</item>
+          <item name="android:colorSecondary">@*android:color/secondary_material_settings_light</item>
+    </style>
+
+
 </resources>
